@@ -1,0 +1,110 @@
+html {
+    font-family: 'Open sans', sans-serif;
+    box-sizing: border-box;
+    /*For setting the width along with border*/
+}
+
+body {
+    background-color: rgb(59, 59, 116);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    background-color: #fffefe;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing-plan {
+    border-bottom:1px solid #b6a7a7;
+
+}
+.pricing-plan:last-child{
+border-bottom: none;
+}
+
+.pricing-img{
+    margin: bottom 25px;
+    width: 100% ;
+    max-width: 100%;
+}
+.pricing-header
+{
+    color: #564e85;
+    letter-spacing: 0.8px;
+    font-weight: 600;    
+}
+.pricing-features{
+    list-style: none;
+    padding-inline-start:0%;
+        margin: 50px 0 30px;/*top horizontal bottom*/
+        color: #3e25cf;
+}
+.pricing-features-item{
+   
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    padding:15px 0;/*top and bottom  left and right*/
+   border-top: 1px solid #b6a7a7;
+ 
+}
+.pricing-features-item:last-child
+{
+    border-bottom: 1px solid #b6a7a7;
+}
+
+.pricing-price
+{
+    color: #3e25cf;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 800;
+display: block;
+}
+.pricing-button{
+
+ color: #3e25cf;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 800;
+    border: 1px solid #5b7ace; ;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding:15px 35px;
+margin:25px 0;
+transition: background-color 200ms ease-in-out;
+}
+.pricing-button:hover{
+    background-color: #9ab2f7;
+}
+
+@media (min-width:900px)
+{
+.panel{
+    flex-direction: row;
+}
+.pricing-plan
+{
+    border-bottom: none;
+    border-right: 1px solid #b6a7a7;
+    padding: 25px 35px;
+}
+.pricing-plan:last-child{
+    border-right: none;
+}
+
+}
+
+/*inspired by colt steel webdev course*/
